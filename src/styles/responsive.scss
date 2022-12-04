@@ -1,0 +1,40 @@
+@import url('../App.scss');
+
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 480px;
+
+@media (max-width: $breakpoint-tablet) {
+  .cart--items {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .cart--items {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    &__item-row {
+        &__head {
+            padding: 0 0 10px 20px;
+            &:last-child {
+                padding: 0 0 10px 10px;
+            }
+        }
+    }
+  }
+  .cart-main{
+      &__form__control {
+        width: 40vw;
+      }
+  }
+  .ml {
+    &__sm {
+      &__0  {
+          margin-left: 0;
+      }
+    }
+  }
+}
